@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            background-color: lightblue;
+            width: 100%;
+
+
+
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+
+        }
+
+        .logo img {
+            width: 40px;
+            margin-top: 2px;
+        }
+
+        .logo > a:hover {
+            color: red;
+            padding: none;
+        }
+
+        .menu {
+            display: inline;
+            justify-content: center;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: cursive;
+            font-weight: bold;
+            margin-left: 60px;
+
+        }
+
+        .search-bar {
+            position: absolute;
+            right: 5px;
+        }
+
+        .nav a:hover {
+            background-color: beige;
+            padding: 14px;
+            color: red;
+        }
+
+        .body {
+            float: left;
+            width: 15%;
+            background-color: lightgreen;
+            height: 668px;
+        }
+
+        .body a {
+            text-decoration: none;
+            overflow: hidden;
+            color: black;
+            font-weight: bold;
+            display: block;
+            justify-content: center;
+            /* <!-- margin-left: 50px;--> */
+            margin-top: 10px;
+            padding: 10px;
+
+
+        }
+
+        .a:hover {
+            background-color: beige;
+            color: red;
+
+        }
+
+        .banner {}
+
+        .banner img {
+            width: 1140px;
+            height: 400px;
+            float: left;
+        }
+
+        .content .A {
+            float: left;
+            background-color: lightgray;
+            width: 42%;
+            height: 250px;
+
+        }
+
+        .content .B {
+            float: right;
+            background-color: rgb(244, 141, 141);
+            width: 43%;
+            height: 250px;
+        }
+
+        .c {
+
+            float: left;
+            background-color: rgb(255, 204, 138);
+            float: initial;
+
+        }
+
+        .footer {
+            float: none;
+            clear: both;
+            background-color: lightseagreen;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <a href="#"><img src="1.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here!">
+                <button>Go</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="body">
+        <div>
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="2.jpg" alt="">
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="A">Article 1</div>
+        <div class="B">Article 2</div>
+    </div>
+    <!-- vivid -->
+    <div class="c">
+        <div>Hello There</div>
+    </div>
+    <div class="footer">Footer</div>
+
+</body>
+
+</html>

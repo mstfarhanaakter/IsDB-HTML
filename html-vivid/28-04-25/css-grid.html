@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: rgba(159, 161, 4, 0.13);
+            padding: 10px;
+            text-align: center;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 150px);
+            grid-template-areas:
+                "header header header header header header "
+                "nav content content content content ads"
+                "nav footer footer footer footer footer "
+            ;
+            grid-gap: 10px;
+           
+        }
+
+        .container > div {
+            border: 2px solid black;
+            display: grid;
+            place-items: center;
+            font-size: 18px;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(248, 74, 141);
+            color: white;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: rgb(238, 202, 156);
+        }
+        .content{
+            grid-area: content;
+            background-color: rgb(197, 111, 137);
+            color: white;
+        }
+
+        .ads{
+            grid-area: ads;
+            background-color: rgb(156, 232, 238);
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(185, 156, 238);
+        }
+       /* div ul {
+            list-style-type: none;
+        }
+        div ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+           
+            
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">SlideBar
+            <!-- <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul> -->
+        </div>
+        <div class="content">Article</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+        
+    </div>
+</body>
+
+</html>
